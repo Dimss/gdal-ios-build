@@ -1,0 +1,5 @@
+module dima {
+    header "sqlite3.h"
+    header "sqlite3_config.h"
+    export *
+}

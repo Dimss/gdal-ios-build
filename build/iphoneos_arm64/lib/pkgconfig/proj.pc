@@ -1,0 +1,14 @@
+prefix=/Users/dkartsev/code/watchit/giskit-dependency/build/iphoneos_arm64
+libdir=${prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}/proj
+
+Name: PROJ
+Description: Coordinate transformation software library
+Requires:
+Version: 9.5.0
+Libs: -L${libdir} -lproj
+Libs.private: -lm -ldl
+Requires.private: sqlite3
+Cflags: -I${includedir}

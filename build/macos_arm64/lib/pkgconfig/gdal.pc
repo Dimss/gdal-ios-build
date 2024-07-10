@@ -1,0 +1,17 @@
+CONFIG_VERSION=3.9.0dev
+CONFIG_INST_PREFIX=/Users/dkartsev/code/watchit/giskit-dependency/build/macos_arm64
+CONFIG_INST_LIBS=-L/Users/dkartsev/code/watchit/giskit-dependency/build/macos_arm64/lib -lgdal /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libiconv.tbd -L/opt/homebrew/Cellar/openssl@3/3.3.1/lib -lssl -lcrypto -L/opt/homebrew/lib -L/usr/local/lib -llz4 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/liblzma.tbd -L/opt/homebrew/Cellar/webp/1.4.0/lib -L/Users/dkartsev/code/watchit/giskit-dependency/build/macos_arm64/lib /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/OpenCL.framework -lzstd.1.5.6 -lwebp /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libz.tbd -L/opt/homebrew/Cellar/openjpeg/2.5.2/lib -lopenjp2 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libpcre2-8.tbd -lpq /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libexpat.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libxml2.tbd /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libcurl.tbd -lproj -lm -ldl -lsqlite3
+CONFIG_INST_CFLAGS=-I/Users/dkartsev/code/watchit/giskit-dependency/build/macos_arm64/include
+CONFIG_INST_DATA=/Users/dkartsev/code/watchit/giskit-dependency/build/macos_arm64/share/gdal
+prefix=${CONFIG_INST_PREFIX}
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${exec_prefix}/include
+datadir=${CONFIG_INST_DATA}
+
+Name: libgdal
+Description: Geospatial Data Abstraction Library
+Version: ${CONFIG_VERSION}
+Libs: ${CONFIG_INST_LIBS}
+Libs.private: 
+Cflags: ${CONFIG_INST_CFLAGS}
