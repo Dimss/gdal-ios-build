@@ -13,14 +13,18 @@ cmake -DCMAKE_TOOLCHAIN_FILE=$CMTOOLCHAIN \
     -DPROJ_ROOT=$PREFIX \
     -DSQLITE3_INCLUDE_DIR=$PREFIX/include \
     -DSQLITE3_LIBRARY=$PREFIX/lib/libsqlite3.a \
-    -DIconv_INCLUDE_DIR=$SDKPATH/usr \
-    -DIconv_LIBRARY=$SDKPATH/usr/lib/libiconv.tbd \
+    -DGDAL_USE_INTERNAL_LIBS=ON \
+    -DGDAL_USE_LIBXML2=OFF \
+    -DGDAL_USE_ICONV=OFF \
     -DCMAKE_BUILD_TYPE=Release \
     -DGDAL_USE_JXL=OFF \
     -DGDAL_USE_OPENSSL=OFF \
     -DGDAL_USE_ZSTD=OFF \
     -DGDAL_USE_WEBP=OFF \
     -DGDAL_USE_OPENJPEG=OFF \
+    -DGDAL_USE_LIBLZMA=OFF \
+    -DGDAL_USE_LIBKML=OFF \
+    -DGDAL_USE_EXPAT=OFF \
     ..
 cmake --build .
 cmake --build . --target install
